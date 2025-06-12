@@ -11,14 +11,18 @@ h1 {
   box-sizing: border-box;
   position: relative; /* For positioning title */
   color: black; /* To make text visible on gray */
+  border: 2px;
+  border-color: black;
 }
 
 /* Title inside container, positioned top-right */
 .container .title {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  position: fixed;
+  top: 1px;
+  right: 1px;
   font-weight: bold;
+  border: 2px;
+  border-color: black;
 }
 
 /* Default: 1 container per row (for small screens) */
