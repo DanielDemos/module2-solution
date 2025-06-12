@@ -44,7 +44,16 @@ h1 {
 }
 
 @media (max-width: 767px){
-  .container-wrapper {
+   .container-wrapper {
+    flex-direction: row; /* side by side */
+  }
+  .container-wrapper .container:nth-child(1),
+  .container-wrapper .container:nth-child(2) {
+    width: 100%;
+  }
+
+  /* Make the 3rd container take full width */
+  .container-wrapper .container:nth-child(3) {
     width: 100%;
   }
 }
