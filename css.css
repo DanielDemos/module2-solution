@@ -45,11 +45,6 @@ h1 {
 
 @media (max-width: 767px){
   .container-wrapper {
-    flex-direction: row;
-  }
-  .container-wrapper .container:nth-child(1),
-  .container-wrapper .container:nth-child(2),
-  .container-wrapper .container:nth-child(3) {
     width: 100%;
   }
 }
