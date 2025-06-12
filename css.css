@@ -3,24 +3,62 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
+/* Base styles for all containers */
+.container {
+  background-color: gray;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* For positioning title */
+  color: black; /* To make text visible on gray */
 }
 
-p {
- background-color: gray;
+/* Title inside container, positioned top-right */
+.container .title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
 }
 
-@media (min-width: 992px) {
-.desktop-container {
-width: 33.33%
+/* Default: 1 container per row (for small screens) */
+.container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-direction: column; /* stack containers vertically */
 }
+
+.container-wrapper .container {
+  width: 100%;
 }
+
+/* Between 768px and 991px: 2 containers in a row, 3rd on its own */
 @media (min-width: 768px) and (max-width: 991px) {
+  .container-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
+  .container-wrapper .container {
+    width: 48%;
+  }
 
+  /* Make the 3rd container take full width */
+  .container-wrapper .container:nth-child(3) {
+    width: 100%;
+  }
 }
-@media (max-width: 767px) {
 
+/* 992px and above: 3 containers in a row */
+@media (min-width: 992px) {
+  .container-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
+  .container-wrapper .container {
+    width: 32%;
+  }
 }
