@@ -5,24 +5,23 @@ h1 {
 
 /* Base styles for all containers */
 .container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: gray;
   margin: 10px;
   padding: 20px;
   box-sizing: border-box;
   position: relative; /* For positioning title */
   color: black; /* To make text visible on gray */
-  border: 2px;
-  border-color: black;
+  border: 2px solid black;
 }
 
 /* Title inside container, positioned top-right */
 .container .title {
-  position: fixed;
-  top: 1px;
-  right: 1px;
+  position: relative;
+  top: 10px;
+  right: 10px;
   font-weight: bold;
-  border: 2px;
-  border-color: black;
+  border: 2px solid black;
 }
 
 /* Default: 1 container per row (for small screens) */
