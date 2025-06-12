@@ -3,14 +3,8 @@ h1 {
 }
 
 @media (min-width: 992px) {
-p {
+.desktop {
 width: 33.33%
-}
-.p2 {
-  width: 33.33%
-}
-.p3 {
-  width: 33.33%
 }
 }
 @media (min-width: 768px) and (max-width: 991px) {
