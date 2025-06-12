@@ -1,15 +1,26 @@
 h1 {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  text-align: top-right;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+p {
+ background-color: gray;
 }
 
 @media (min-width: 992px) {
-.desktop {
+.desktop-container {
 width: 33.33%
 }
 }
 @media (min-width: 768px) and (max-width: 991px) {
 
-.p1 {
+.tablet-container {
 width: 50%
 }
 .p2 {
