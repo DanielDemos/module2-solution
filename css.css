@@ -43,6 +43,12 @@ h1 {
   width: 100%;
 }
 
+@media (max-width: 767px){
+  .container{
+    width: 100%
+  }
+}
+
 /* Between 768px and 991px: 2 containers in a row, 3rd on its own */
 @media (min-width: 768px) and (max-width: 991px) {
  .container-wrapper {
