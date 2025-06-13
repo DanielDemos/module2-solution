@@ -36,7 +36,7 @@ h1 {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-start;
-  flex-direction: row; /* default: horizontal layout */
+  flex-direction: column; /* default: horizontal layout */
 }
 
 .container-wrapper .container {
