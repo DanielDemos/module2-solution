@@ -36,22 +36,13 @@ h1 {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: flex-start;
-  flex-direction: column; /* stack containers vertically */
+  flex-direction: row; /* default: horizontal layout */
 }
 
 .container-wrapper .container {
-  width: 100%;
+  width: 32%; /* default for large screens */
 }
 
-@media (max-width: 767px){
-   .container-wrapper {
-    flex-direction: column;
-  }
-
-  .container-wrapper .container {
-    width: 100%;
-  }
-}
 
 /* Between 768px and 991px: 2 containers in a row, 3rd on its own */
 @media (min-width: 768px) and (max-width: 991px) {
