@@ -44,23 +44,7 @@ h1 {
 }
 
 
-/* Between 768px and 991px: 2 containers in a row, 3rd on its own */
-@media (min-width: 768px) and (max-width: 991px) {
- .container-wrapper {
-    flex-direction: row; /* side by side */
-  }
-  .container-wrapper .container:nth-child(1),
-  .container-wrapper .container:nth-child(2) {
-    width: 47.4%;
-  }
-
-  /* Make the 3rd container take full width */
-  .container-wrapper .container:nth-child(3) {
-    width: 100%;
-  }
-}
-
-/* 992px and above: 3 containers in a row */
+/* === LARGE SCREENS: 992px and up === */
 @media (min-width: 992px) {
   .container-wrapper {
     flex-direction: row;
@@ -69,5 +53,32 @@ h1 {
 
   .container-wrapper .container {
     width: 32%;
+  }
+}
+
+/* === MEDIUM SCREENS: 768px - 991px === */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-wrapper {
+    flex-direction: row;
+  }
+
+  .container-wrapper .container:nth-child(1),
+  .container-wrapper .container:nth-child(2) {
+    width: 47.4%;
+  }
+
+  .container-wrapper .container:nth-child(3) {
+    width: 100%;
+  }
+}
+
+/* === SMALL SCREENS: Less than 768px === */
+@media (max-width: 767px) {
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container-wrapper .container {
+    width: 100%;
   }
 }
